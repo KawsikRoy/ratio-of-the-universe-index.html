@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>JS Bin</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css' rel='stylesheet' type='text/css'/>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css' rel='stylesheet' type='text/css'/>
+  <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' rel='stylesheet' type='text/css'/>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js' type='text/javascript'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' type='text/javascript'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <style>
+    .row{min-width:300px; max-width:600px; margin:0 auto;}
+    .row > section > div{
+      border-bottom:1px solid pink;
+      height:2em;
+      line-height:2em;
+      min-width:10px;
+      text-align:left;
+      overflow:hidden;
+    }
+    section.four{padding:0 0.5em; font-weight:800;}
+    .row > section.two > div{
+      cursor:pointer;
+    }
+    .num>button {
+      width:100%;
+    }
+    .set-row > section > *{
+      line-height:2em;
+      height:2em;
+      margin:0; padding:0;
+    }
+  </style>
+</head>
+<body>
+<div class="text-center">
+  <h1 class="display-4">Hello, world!</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <div class="container">
+    <div class="row">
+      <section class="four border">
+        <div>1.</div>
+        <div>2.</div>
+        <div>3.</div>
+        <div>4.</div>
+        <div>5.</div>
+        <div>6.</div>
+        <div>7.</div>
+        <div>8.</div>
+        <div>9.</div>
+        <div>10.</div>
+        <div>11.</div>
+        <div>12.</div>
+        <div>13.</div>
+        <div>14.</div>
+        <div>15.</div>
+        <div>16.</div>
+        <div>17.</div>
+        <div>18.</div>
+        <div>19.</div>
+        <div>20.</div>
+      </section> 
+      <section class="three col border">
+        <div>moon</div>
+        <div>earth</div>
+        <div>sun</div>
+        <div>solar system</div>
+        <div>galaxy</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section> 
+      <section class="one col border">
+        <div>2</div>
+        <div>6</div>
+        <div>30</div>
+        <div>10</div>
+        <div>100</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+      <section class="two col border">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div>1</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+    </div>
+    <hr class="my-4">
+    <h1 class="display-5">Set the Value</h1>
+    <div class="row set-row">
+      <section class="first col">
+        <input type="text" placeholder="1. text value" class="form-control" />
+        <input type="text" placeholder="2. text value" class="form-control" />
+        <input type="text" placeholder="3. text value" class="form-control" />
+        <input type="text" placeholder="4. text value" class="form-control" />
+        <input type="text" placeholder="5. text value" class="form-control" />
+        <input type="text" placeholder="6. text value" class="form-control" />
+        <input type="text" placeholder="7. text value" class="form-control" />
+        <input type="text" placeholder="8. text value" class="form-control" />
+        <input type="text" placeholder="9. text value" class="form-control" />
+        <input type="text" placeholder="10. text value" class="form-control" />
+        <input type="text" placeholder="11. text value" class="form-control" />
+        <input type="text" placeholder="12. text value" class="form-control" />
+        <input type="text" placeholder="13. text value" class="form-control" />
+        <input type="text" placeholder="14. text value" class="form-control" />
+        <input type="text" placeholder="15. text value" class="form-control" />
+        <input type="text" placeholder="16. text value" class="form-control" />
+        <input type="text" placeholder="17. text value" class="form-control" />
+        <input type="text" placeholder="18. text value" class="form-control" />
+        <input type="text" placeholder="19. text value" class="form-control" />
+        <input type="text" placeholder="20. text value" class="form-control" />
+      </section>
+      <section class="last col">
+        <input type="text" placeholder="1. number value" class="form-control" />
+        <input type="text" placeholder="2. number value" class="form-control" />
+        <input type="text" placeholder="3. number value" class="form-control" />
+        <input type="text" placeholder="4. number value" class="form-control" />
+        <input type="text" placeholder="5. number value" class="form-control" />
+        <input type="text" placeholder="6. number value" class="form-control" />
+        <input type="text" placeholder="7. number value" class="form-control" />
+        <input type="text" placeholder="8. number value" class="form-control" />
+        <input type="text" placeholder="9. number value" class="form-control" />
+        <input type="text" placeholder="10. number value" class="form-control" />
+        <input type="text" placeholder="11. number value" class="form-control" />
+        <input type="text" placeholder="12. number value" class="form-control" />
+        <input type="text" placeholder="13. number value" class="form-control" />
+        <input type="text" placeholder="14. number value" class="form-control" />
+        <input type="text" placeholder="15. number value" class="form-control" />
+        <input type="text" placeholder="16. number value" class="form-control" />
+        <input type="text" placeholder="17. number value" class="form-control" />
+        <input type="text" placeholder="18. number value" class="form-control" />
+        <input type="text" placeholder="19. number value" class="form-control" />
+        <input type="text" placeholder="20. number value" class="form-control" />
+      </section>
+    </div>
+    <hr class="my-4">
+    <button class="btn btn-primary btn-block">Set the Value</button>
+    <hr class="my-4">
+    <hr class="my-4">
+  </div>
+</div>
+<script>
+$('button').click(function(){
+  $('.first input').each(function(){
+    var y = $(this).index();
+    var h = $(this).val();
+    $('.three>div:nth-child('+(y+1)+')').text(h);
+  });
+  $('.last input').each(function(){
+    var y = $(this).index();
+    var h = $(this).val();
+    $('.one>div:nth-child('+(y+1)+')').text(h);
+  });
+});
+
+$('section.two>div').click(function(){
+  $('section.two>div').empty();
+  $(this).text(1);
+
+  var k = $('section.two>div').filter(function() {
+      return $(this).text() === '1';
+  }).index() + 1;
+
+  $('section.two>div:nth-child('+(k+1)+')').text($('section.one>div:nth-child('+(k+1)+')').text() / $('section.one>div:nth-child('+(k+0)+')').text() * $('section.two>div:nth-child('+(k+0)+')').text());
+  $('section.two>div:nth-child('+(k+2)+')').text($('section.one>div:nth-child('+(k+2)+')').text() / $('section.one>div:nth-child('+(k+1)+')').text() * $('section.two>div:nth-child('+(k+1)+')').text());
+  $('section.two>div:nth-child('+(k+3)+')').text($('section.one>div:nth-child('+(k+3)+')').text() / $('section.one>div:nth-child('+(k+2)+')').text() * $('section.two>div:nth-child('+(k+2)+')').text());
+  $('section.two>div:nth-child('+(k+4)+')').text($('section.one>div:nth-child('+(k+4)+')').text() / $('section.one>div:nth-child('+(k+3)+')').text() * $('section.two>div:nth-child('+(k+3)+')').text());
+  $('section.two>div:nth-child('+(k+5)+')').text($('section.one>div:nth-child('+(k+5)+')').text() / $('section.one>div:nth-child('+(k+4)+')').text() * $('section.two>div:nth-child('+(k+4)+')').text());
+  $('section.two>div:nth-child('+(k+6)+')').text($('section.one>div:nth-child('+(k+6)+')').text() / $('section.one>div:nth-child('+(k+5)+')').text() * $('section.two>div:nth-child('+(k+5)+')').text());
+  $('section.two>div:nth-child('+(k+7)+')').text($('section.one>div:nth-child('+(k+7)+')').text() / $('section.one>div:nth-child('+(k+6)+')').text() * $('section.two>div:nth-child('+(k+6)+')').text());
+  $('section.two>div:nth-child('+(k+8)+')').text($('section.one>div:nth-child('+(k+8)+')').text() / $('section.one>div:nth-child('+(k+7)+')').text() * $('section.two>div:nth-child('+(k+7)+')').text());
+  $('section.two>div:nth-child('+(k+9)+')').text($('section.one>div:nth-child('+(k+9)+')').text() / $('section.one>div:nth-child('+(k+8)+')').text() * $('section.two>div:nth-child('+(k+8)+')').text());
+  $('section.two>div:nth-child('+(k+10)+')').text($('section.one>div:nth-child('+(k+10)+')').text() / $('section.one>div:nth-child('+(k+9)+')').text() * $('section.two>div:nth-child('+(k+9)+')').text());
+  $('section.two>div:nth-child('+(k+11)+')').text($('section.one>div:nth-child('+(k+11)+')').text() / $('section.one>div:nth-child('+(k+10)+')').text() * $('section.two>div:nth-child('+(k+10)+')').text());
+  $('section.two>div:nth-child('+(k+12)+')').text($('section.one>div:nth-child('+(k+12)+')').text() / $('section.one>div:nth-child('+(k+11)+')').text() * $('section.two>div:nth-child('+(k+11)+')').text());
+  $('section.two>div:nth-child('+(k+13)+')').text($('section.one>div:nth-child('+(k+13)+')').text() / $('section.one>div:nth-child('+(k+12)+')').text() * $('section.two>div:nth-child('+(k+12)+')').text());
+  $('section.two>div:nth-child('+(k+14)+')').text($('section.one>div:nth-child('+(k+14)+')').text() / $('section.one>div:nth-child('+(k+13)+')').text() * $('section.two>div:nth-child('+(k+13)+')').text());
+  $('section.two>div:nth-child('+(k+15)+')').text($('section.one>div:nth-child('+(k+15)+')').text() / $('section.one>div:nth-child('+(k+14)+')').text() * $('section.two>div:nth-child('+(k+14)+')').text());
+  $('section.two>div:nth-child('+(k+16)+')').text($('section.one>div:nth-child('+(k+16)+')').text() / $('section.one>div:nth-child('+(k+15)+')').text() * $('section.two>div:nth-child('+(k+15)+')').text());
+  $('section.two>div:nth-child('+(k+17)+')').text($('section.one>div:nth-child('+(k+17)+')').text() / $('section.one>div:nth-child('+(k+16)+')').text() * $('section.two>div:nth-child('+(k+16)+')').text());
+  $('section.two>div:nth-child('+(k+18)+')').text($('section.one>div:nth-child('+(k+18)+')').text() / $('section.one>div:nth-child('+(k+17)+')').text() * $('section.two>div:nth-child('+(k+17)+')').text());
+  $('section.two>div:nth-child('+(k+19)+')').text($('section.one>div:nth-child('+(k+19)+')').text() / $('section.one>div:nth-child('+(k+18)+')').text() * $('section.two>div:nth-child('+(k+18)+')').text());
+  $('section.two>div:nth-child('+(k+20)+')').text($('section.one>div:nth-child('+(k+20)+')').text() / $('section.one>div:nth-child('+(k+19)+')').text() * $('section.two>div:nth-child('+(k+19)+')').text());
+
+
+  $('section.two>div:nth-child('+(k-1)+')').text($('section.one>div:nth-child('+(k-1)+')').text() / $('section.one>div:nth-child('+(k-0)+')').text() * $('section.two>div:nth-child('+(k-0)+')').text());
+  $('section.two>div:nth-child('+(k-2)+')').text($('section.one>div:nth-child('+(k-2)+')').text() / $('section.one>div:nth-child('+(k-1)+')').text() * $('section.two>div:nth-child('+(k-1)+')').text());
+  $('section.two>div:nth-child('+(k-3)+')').text($('section.one>div:nth-child('+(k-3)+')').text() / $('section.one>div:nth-child('+(k-2)+')').text() * $('section.two>div:nth-child('+(k-2)+')').text());
+  $('section.two>div:nth-child('+(k-4)+')').text($('section.one>div:nth-child('+(k-4)+')').text() / $('section.one>div:nth-child('+(k-3)+')').text() * $('section.two>div:nth-child('+(k-3)+')').text());
+  $('section.two>div:nth-child('+(k-5)+')').text($('section.one>div:nth-child('+(k-5)+')').text() / $('section.one>div:nth-child('+(k-4)+')').text() * $('section.two>div:nth-child('+(k-4)+')').text());
+  $('section.two>div:nth-child('+(k-6)+')').text($('section.one>div:nth-child('+(k-6)+')').text() / $('section.one>div:nth-child('+(k-5)+')').text() * $('section.two>div:nth-child('+(k-5)+')').text());
+  $('section.two>div:nth-child('+(k-7)+')').text($('section.one>div:nth-child('+(k-7)+')').text() / $('section.one>div:nth-child('+(k-6)+')').text() * $('section.two>div:nth-child('+(k-6)+')').text());
+  $('section.two>div:nth-child('+(k-8)+')').text($('section.one>div:nth-child('+(k-8)+')').text() / $('section.one>div:nth-child('+(k-7)+')').text() * $('section.two>div:nth-child('+(k-7)+')').text());
+  $('section.two>div:nth-child('+(k-9)+')').text($('section.one>div:nth-child('+(k-9)+')').text() / $('section.one>div:nth-child('+(k-8)+')').text() * $('section.two>div:nth-child('+(k-8)+')').text());
+  $('section.two>div:nth-child('+(k-10)+')').text($('section.one>div:nth-child('+(k-10)+')').text() / $('section.one>div:nth-child('+(k-9)+')').text() * $('section.two>div:nth-child('+(k-9)+')').text());
+  $('section.two>div:nth-child('+(k-11)+')').text($('section.one>div:nth-child('+(k-11)+')').text() / $('section.one>div:nth-child('+(k-10)+')').text() * $('section.two>div:nth-child('+(k-10)+')').text());
+  $('section.two>div:nth-child('+(k-12)+')').text($('section.one>div:nth-child('+(k-12)+')').text() / $('section.one>div:nth-child('+(k-11)+')').text() * $('section.two>div:nth-child('+(k-11)+')').text());
+  $('section.two>div:nth-child('+(k-13)+')').text($('section.one>div:nth-child('+(k-13)+')').text() / $('section.one>div:nth-child('+(k-12)+')').text() * $('section.two>div:nth-child('+(k-12)+')').text());
+  $('section.two>div:nth-child('+(k-14)+')').text($('section.one>div:nth-child('+(k-14)+')').text() / $('section.one>div:nth-child('+(k-13)+')').text() * $('section.two>div:nth-child('+(k-13)+')').text());
+  $('section.two>div:nth-child('+(k-15)+')').text($('section.one>div:nth-child('+(k-15)+')').text() / $('section.one>div:nth-child('+(k-14)+')').text() * $('section.two>div:nth-child('+(k-14)+')').text());
+  $('section.two>div:nth-child('+(k-16)+')').text($('section.one>div:nth-child('+(k-16)+')').text() / $('section.one>div:nth-child('+(k-15)+')').text() * $('section.two>div:nth-child('+(k-15)+')').text());
+  $('section.two>div:nth-child('+(k-17)+')').text($('section.one>div:nth-child('+(k-17)+')').text() / $('section.one>div:nth-child('+(k-16)+')').text() * $('section.two>div:nth-child('+(k-16)+')').text());
+  $('section.two>div:nth-child('+(k-18)+')').text($('section.one>div:nth-child('+(k-18)+')').text() / $('section.one>div:nth-child('+(k-17)+')').text() * $('section.two>div:nth-child('+(k-17)+')').text());
+  $('section.two>div:nth-child('+(k-19)+')').text($('section.one>div:nth-child('+(k-19)+')').text() / $('section.one>div:nth-child('+(k-18)+')').text() * $('section.two>div:nth-child('+(k-18)+')').text());
+  $('section.two>div:nth-child('+(k-20)+')').text($('section.one>div:nth-child('+(k-20)+')').text() / $('section.one>div:nth-child('+(k-19)+')').text() * $('section.two>div:nth-child('+(k-19)+')').text());
+
+  
+});
+
+</script>
+</body>
+</html>
